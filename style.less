@@ -186,7 +186,7 @@ body{
     justify-content: center;
     background-color: @primary-color;
     width: 100%;
-    height: 50px;
+    height: 55px;
     border-radius: 10px;
     box-shadow: 10px 15px 16px 5px @secondary-color;
     .cart-icon-img{
@@ -195,3 +195,79 @@ body{
         fill: @dark-color;
     }
 }
+
+.product-cart-preview-container{
+    position: absolute;
+    width: 95%;
+    height: 250px;
+    background-color: @white-color;
+    z-index: 999;
+    top: 90px;
+    left: 10px;
+    right: 0px;
+    border-radius: 10px;
+    .product-cart-header{
+        width: 100%;
+        height: 50px;
+        padding-left: 20px;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        .cart-heading{
+            color: @dark-color;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0px;
+        }
+    }
+    .cart-product-details-container{
+        width: 100%;
+        height: 200px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+        .cart-product-price-container{
+            display: flex;
+            align-items: center;
+            .cart-product-thumbnail-img{
+                width: 50px;
+                height: 48px;
+                border-radius: 5px;
+                margin-right: 20px;
+            }
+            .cart-product-total-amount{
+                .cart-product-name{
+                    margin: 0px;
+                    color: @grey-color;
+                    font-weight: 500;
+                }
+                .cart-product-price{
+                    margin-top: 5px;
+                    margin-bottom: 0px;
+                    color: @grey-color;
+                }
+                .cart-product-total-price{
+                    color: @dark-color;
+                    font-weight: 700;
+                }
+            }
+            .cart-product-item-remove-btn{
+                margin-left: auto;
+                .cart-product-item-delete{
+                    width: 18px;
+                }
+            }
+
+        }
+        .cart-checkout-btn{
+            width: inherit;
+            height: 55px;
+            background-color: @primary-color;
+            color: @dark-color;
+            font-weight: 700;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 10px 15px 16px 5px @secondary-color;
+        }
+    }
+}   
