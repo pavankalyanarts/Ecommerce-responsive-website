@@ -196,6 +196,10 @@ body{
     }
 }
 
+.view-cart{
+    display: none;
+}
+
 .product-cart-preview-container{
     position: absolute;
     width: 95%;
@@ -236,19 +240,26 @@ body{
                 margin-right: 20px;
             }
             .cart-product-total-amount{
+                .cart-product-inner-container{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 5px;
+                    .cart-product-price{
+                        margin-bottom: 0px;
+                        color: @grey-color;
+                        margin-right: 15px;
+                    }
+                    .cart-product-total-price{
+                        color: @dark-color;
+                        font-weight: 700;
+                        margin-bottom: 0px;
+                        width: 0px;
+                    }
+                }
                 .cart-product-name{
                     margin: 0px;
                     color: @grey-color;
                     font-weight: 500;
-                }
-                .cart-product-price{
-                    margin-top: 5px;
-                    margin-bottom: 0px;
-                    color: @grey-color;
-                }
-                .cart-product-total-price{
-                    color: @dark-color;
-                    font-weight: 700;
                 }
             }
             .cart-product-item-remove-btn{
